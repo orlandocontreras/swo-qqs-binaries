@@ -67,7 +67,7 @@ flowchart TD
 Verifica que la infraestructura del cliente puede alcanzar el servicio (puertos 22 y 443).
 
 ```bash
-curl -s -X POST "<URL_API_QUICKSCAN>/v1/jobs" \
+curl -s -X POST "https://jum55uzxij.execute-api.us-east-1.amazonaws.com/prod/v1/jobs" \
   -H "Content-Type: application/json" \
   -H "x-api-key: <API_KEY_SCOUT>" \
   -d '{"Project":"prueba-conectividad"}'
